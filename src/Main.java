@@ -104,7 +104,8 @@ public class Main {
 
                     //Tries to update input so that the key is two words concatenated.
                     try {
-                        //Gets the previously used word, and the next generated word, concatenates both.
+                        //Gets the previously used word, and the current used word, concatenates both and uses that as a key.
+                        //With the concatenated key, it then gets the next word.
                         input = map.get(words.get(i-1)+ words.get(i)).getNext();
                     }
                     //Otherwise the two word key had no values to follow.
